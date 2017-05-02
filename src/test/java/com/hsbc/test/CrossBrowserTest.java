@@ -65,7 +65,7 @@ public class CrossBrowserTest {
                 break;
         }
         try {
-            driver = new RemoteWebDriver(new URL("http://10.0.0.10:4444/wd/hub"), capabilities);
+            driver = new RemoteWebDriver(new URL("http://40.71.175.242:4444/wd/hub"), capabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
