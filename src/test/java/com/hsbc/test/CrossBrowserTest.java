@@ -108,7 +108,7 @@ public class CrossBrowserTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(confirmText));
         // Validating that the next page is up
         Assert.assertTrue(driver.getPageSource().contains(expectedPage));
-	if (BROWSER == "ie") {
+	if (BROWSER.equals("ie")) {
             Assert.fail("The Application is not supported on IE");
         }
 
