@@ -20,7 +20,7 @@ import java.net.URL;
  * Created by HSBC on 02-05-2017.
  */
 public class CrossBrowserTest {
-    protected final String BROWSER = System.setProperty("BROWSER", "ie");
+    protected final String BROWSER = System.getProperty("BROWSER", "ie");
     protected final String APPLICATION_URL = "http://vm-dev.eastus.cloudapp.azure.com:8080/CreditCardApp/";
 
     RemoteWebDriver driver;
