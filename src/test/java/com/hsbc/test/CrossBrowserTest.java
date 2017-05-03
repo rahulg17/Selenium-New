@@ -59,7 +59,8 @@ public class CrossBrowserTest {
                 System.setProperty("webdriver.ie.driver", executable);
                 //driver = new InternetExplorerDriver();
                 capabilities = DesiredCapabilities.internetExplorer();
-		driver.switchTo().alert().accept();                   // Uncomment this to fix
+		//driver.switchTo().alert().accept();                   // Uncomment this to fix
+		capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
                 break;
             default:
                 System.out.println("Browser Unsupported");
