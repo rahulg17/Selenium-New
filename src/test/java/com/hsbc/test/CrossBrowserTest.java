@@ -44,7 +44,7 @@ public class CrossBrowserTest {
     By numberInput = By.name("number");
     By cityInput = By.name("city");
     By creditTypeList = By.name("creditCard");
-    By submitButton = By.xpath("//input[@value='SUBMIT']");
+    By submitButton = By.id("submit-button");//By.xpath("//input[@value='SUBMIT']");
     By confirmText = By.xpath("//*[contains(text(),'WELCOME')]");
 
     @BeforeTest
